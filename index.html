@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skills — Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="c"></canvas>
+<div class="scanline"></div>
+<div class="tech-badge">Powered by <span>Three.js</span></div>
+<p class="hint">Move mouse to <span>orbit</span> ↗</p>
+
+<div class="page">
+  <div class="hdr">
+    <p class="lbl">Technical proficiency</p>
+    <h2 class="ttl">Skills &amp;<br><em>tools</em></h2>
+    <p class="sub">Everything in my developer toolkit — from crafting pixels with CSS to spinning up servers with Node, and rendering deep-space scenes with Three.js.</p>
+    <div class="rule"></div>
+    <div class="stats">
+      <div class="stat-item"><div class="stat-num">32+</div><div class="stat-lbl">Technologies</div></div>
+      <div class="stat-div"></div>
+      <div class="stat-item"><div class="stat-num">5</div><div class="stat-lbl">Categories</div></div>
+      <div class="stat-div"></div>
+      <div class="stat-item"><div class="stat-num">3+</div><div class="stat-lbl">Years coding</div></div>
+      <div class="stat-div"></div>
+      <div class="stat-item"><div class="stat-num">∞</div><div class="stat-lbl">Still learning</div></div>
+    </div>
+  </div>
+
+  <div class="tabs">
+    <button class="tab active" data-filter="all">All skills</button>
+    <button class="tab" data-filter="frontend">Frontend</button>
+    <button class="tab" data-filter="backend">Backend</button>
+    <button class="tab" data-filter="3d">3D / WebGL</button>
+    <button class="tab" data-filter="tools">Tools</button>
+  </div>
+
+  <div class="grid" id="grid">
+
+    <!-- ═══════ FRONTEND ═══════ -->
+    <div class="card show" data-cat="frontend">
+      <span class="badge">5 yrs</span>
+      <div class="card-top"><div class="icon">🌐</div><div class="pct" data-target="96">0%</div></div>
+      <div class="cname">HTML5</div><div class="ctag">Frontend · Markup</div>
+      <div class="track"><div class="fill fill-teal" data-pct="96"></div></div>
+      <div class="chips"><span class="chip">Semantic</span><span class="chip">Accessibility</span><span class="chip">SEO</span><span class="chip">Canvas</span></div>
+    </div>
+
+    <div class="card show" data-cat="frontend">
+      <span class="badge">5 yrs</span>
+      <div class="card-top"><div class="icon">🎨</div><div class="pct" data-target="94">0%</div></div>
+      <div class="cname">CSS3</div><div class="ctag">Frontend · Styling</div>
+      <div class="track"><div class="fill fill-teal" data-pct="94"></div></div>
+      <div class="chips"><span class="chip">Flexbox</span><span class="chip">Grid</span><span class="chip">Variables</span><span class="chip">Keyframes</span></div>
+    </div>
+
+    <div class="card show" data-cat="frontend">
+      <span class="badge">4 yrs</span>
+      <div class="card-top"><div class="icon">🟡</div><div class="pct" data-target="90">0%</div></div>
+      <div class="cname">JavaScript</div><div class="ctag">Frontend · Language</div>
+      <div class="track"><div class="fill fill-teal" data-pct="90"></div></div>
+      <div class="chips"><span class="chip">ES2024+</span><span class="chip">DOM</span><span class="chip">Fetch API</span><span class="chip">Modules</span></div>
+    </div>
+
+    <div class="card show" data-cat="frontend">
+      <span class="badge">3 yrs</span>
+      <div class="card-top"><div class="icon">📱</div><div class="pct" data-target="88">0%</div></div>
+      <div class="cname">Responsive Design</div><div class="ctag">Frontend · Layout</div>
+      <div class="track"><div class="fill fill-teal" data-pct="88"></div></div>
+      <div class="chips"><span class="chip">Mobile-first</span><span class="chip">Media queries</span><span class="chip">Fluid type</span></div>
+    </div>
+
+    <div class="card show" data-cat="frontend">
+      <span class="badge">2 yrs</span>
+      <div class="card-top"><div class="icon">💨</div><div class="pct" data-target="82">0%</div></div>
+      <div class="cname">Tailwind CSS</div><div class="ctag">Frontend · Framework</div>
+      <div class="track"><div class="fill fill-teal" data-pct="82"></div></div>
+      <div class="chips"><span class="chip">Utility-first</span><span class="chip">JIT</span><span class="chip">Config</span></div>
+    </div>
+
+    <div class="card show" data-cat="frontend">
+      <span class="badge">3 yrs</span>
+      <div class="card-top"><div class="icon">🅱️</div><div class="pct" data-target="79">0%</div></div>
+      <div class="cname">Bootstrap</div><div class="ctag">Frontend · Framework</div>
+      <div class="track"><div class="fill fill-teal" data-pct="79"></div></div>
+      <div class="chips"><span class="chip">Grid</span><span class="chip">Components</span><span class="chip">Sass vars</span></div>
+    </div>
+
+    <div class="card show" data-cat="frontend">
+      <span class="badge">4 yrs</span>
+      <div class="card-top"><div class="icon">🧩</div><div class="pct" data-target="87">0%</div></div>
+      <div class="cname">DOM Manipulation</div><div class="ctag">Frontend · JavaScript</div>
+      <div class="track"><div class="fill fill-teal" data-pct="87"></div></div>
+      <div class="chips"><span class="chip">querySelector</span><span class="chip">Events</span><span class="chip">MutationObserver</span></div>
+    </div>
+
+    <div class="card show" data-cat="frontend">
+      <span class="badge">3 yrs</span>
+      <div class="card-top"><div class="icon">✨</div><div class="pct" data-target="85">0%</div></div>
+      <div class="cname">CSS / JS Animations</div><div class="ctag">Frontend · Motion</div>
+      <div class="track"><div class="fill fill-teal" data-pct="85"></div></div>
+      <div class="chips"><span class="chip">Keyframes</span><span class="chip">GSAP</span><span class="chip">Scroll-triggered</span></div>
+    </div>
+
+    <!-- ═══════ BACKEND ═══════ -->
+    <div class="card show" data-cat="backend">
+      <span class="badge">3 yrs</span>
+      <div class="card-top"><div class="icon">🐍</div><div class="pct" data-target="84">0%</div></div>
+      <div class="cname">Python</div><div class="ctag">Backend · Language</div>
+      <div class="track"><div class="fill fill-purple" data-pct="84"></div></div>
+      <div class="chips"><span class="chip">Scripts</span><span class="chip">Flask</span><span class="chip">Data</span><span class="chip">Automation</span></div>
+    </div>
+
+    <div class="card show" data-cat="backend">
+      <span class="badge">3 yrs</span>
+      <div class="card-top"><div class="icon">🟢</div><div class="pct" data-target="78">0%</div></div>
+      <div class="cname">Node.js</div><div class="ctag">Backend · Runtime</div>
+      <div class="track"><div class="fill fill-purple" data-pct="78"></div></div>
+      <div class="chips"><span class="chip">EventLoop</span><span class="chip">Streams</span><span class="chip">fs/path</span></div>
+    </div>
+
+    <div class="card show" data-cat="backend">
+      <span class="badge">2 yrs</span>
+      <div class="card-top"><div class="icon">🚂</div><div class="pct" data-target="75">0%</div></div>
+      <div class="cname">Express.js</div><div class="ctag">Backend · Framework</div>
+      <div class="track"><div class="fill fill-purple" data-pct="75"></div></div>
+      <div class="chips"><span class="chip">Routing</span><span class="chip">Middleware</span><span class="chip">REST</span></div>
+    </div>
+
+    <div class="card show" data-cat="backend">
+      <span class="badge">2 yrs</span>
+      <div class="card-top"><div class="icon">🐘</div><div class="pct" data-target="65">0%</div></div>
+      <div class="cname">PHP</div><div class="ctag">Backend · Language</div>
+      <div class="track"><div class="fill fill-purple" data-pct="65"></div></div>
+      <div class="chips"><span class="chip">Forms</span><span class="chip">Sessions</span><span class="chip">PDO</span></div>
+    </div>
+
+    <div class="card show" data-cat="backend">
+      <span class="badge">2 yrs</span>
+      <div class="card-top"><div class="icon">🗄️</div><div class="pct" data-target="74">0%</div></div>
+      <div class="cname">MySQL</div><div class="ctag">Backend · Database</div>
+      <div class="track"><div class="fill fill-purple" data-pct="74"></div></div>
+      <div class="chips"><span class="chip">Queries</span><span class="chip">Joins</span><span class="chip">Indexing</span><span class="chip">Schema</span></div>
+    </div>
+
+    <div class="card show" data-cat="backend">
+      <span class="badge">2 yrs</span>
+      <div class="card-top"><div class="icon">🔌</div><div class="pct" data-target="77">0%</div></div>
+      <div class="cname">REST API</div><div class="ctag">Backend · Architecture</div>
+      <div class="track"><div class="fill fill-purple" data-pct="77"></div></div>
+      <div class="chips"><span class="chip">CRUD</span><span class="chip">JSON</span><span class="chip">Status codes</span></div>
+    </div>
+
+    <div class="card show" data-cat="backend">
+      <span class="badge">2 yrs</span>
+      <div class="card-top"><div class="icon">🔐</div><div class="pct" data-target="70">0%</div></div>
+      <div class="cname">Authentication</div><div class="ctag">Backend · Security</div>
+      <div class="track"><div class="fill fill-purple" data-pct="70"></div></div>
+      <div class="chips"><span class="chip">JWT</span><span class="chip">Sessions</span><span class="chip">Bcrypt</span></div>
+    </div>
+
+    <!-- ═══════ 3D / WEBGL ═══════ -->
+    <div class="card show" data-cat="3d">
+      <span class="badge">2 yrs</span>
+      <div class="card-top"><div class="icon">🪐</div><div class="pct" data-target="70">0%</div></div>
+      <div class="cname">Three.js</div><div class="ctag">3D · Library</div>
+      <div class="track"><div class="fill fill-amber" data-pct="70"></div></div>
+      <div class="chips"><span class="chip">Scene</span><span class="chip">Lights</span><span class="chip">GLTF</span><span class="chip">Textures</span></div>
+    </div>
+
+    <div class="card show" data-cat="3d">
+      <span class="badge">1.5 yrs</span>
+      <div class="card-top"><div class="icon">🕸️</div><div class="pct" data-target="58">0%</div></div>
+      <div class="cname">WebGL</div><div class="ctag">3D · API</div>
+      <div class="track"><div class="fill fill-amber" data-pct="58"></div></div>
+      <div class="chips"><span class="chip">Buffers</span><span class="chip">Drawcalls</span><span class="chip">VAOs</span></div>
+    </div>
+
+    <div class="card show" data-cat="3d">
+      <span class="badge">1 yr</span>
+      <div class="card-top"><div class="icon">✦</div><div class="pct" data-target="50">0%</div></div>
+      <div class="cname">GLSL Shaders</div><div class="ctag">3D · Graphics</div>
+      <div class="track"><div class="fill fill-amber" data-pct="50"></div></div>
+      <div class="chips"><span class="chip">Vertex</span><span class="chip">Fragment</span><span class="chip">Uniforms</span></div>
+    </div>
+
+    <div class="card show" data-cat="3d">
+      <span class="badge">1.5 yrs</span>
+      <div class="card-top"><div class="icon">🎨</div><div class="pct" data-target="60">0%</div></div>
+      <div class="cname">Blender</div><div class="ctag">3D · Modelling</div>
+      <div class="track"><div class="fill fill-amber" data-pct="60"></div></div>
+      <div class="chips"><span class="chip">Modelling</span><span class="chip">UV maps</span><span class="chip">GLTF export</span></div>
+    </div>
+
+    <div class="card show" data-cat="3d">
+      <span class="badge">2 yrs</span>
+      <div class="card-top"><div class="icon">🎬</div><div class="pct" data-target="65">0%</div></div>
+      <div class="cname">3D Animations</div><div class="ctag">3D · Motion</div>
+      <div class="track"><div class="fill fill-amber" data-pct="65"></div></div>
+      <div class="chips"><span class="chip">AnimMixer</span><span class="chip">GSAP</span><span class="chip">Tweening</span></div>
+    </div>
+
+    <div class="card show" data-cat="3d">
+      <span class="badge">1.5 yrs</span>
+      <div class="card-top"><div class="icon">✦</div><div class="pct" data-target="62">0%</div></div>
+      <div class="cname">Particle Effects</div><div class="ctag">3D · VFX</div>
+      <div class="track"><div class="fill fill-amber" data-pct="62"></div></div>
+      <div class="chips"><span class="chip">BufferGeo</span><span class="chip">PointsMat</span><span class="chip">Custom</span></div>
+    </div>
+
+    <div class="card show" data-cat="3d">
+      <span class="badge">1.5 yrs</span>
+      <div class="card-top"><div class="icon">🖱️</div><div class="pct" data-target="68">0%</div></div>
+      <div class="cname">Interactive 3D UI</div><div class="ctag">3D · Interaction</div>
+      <div class="track"><div class="fill fill-amber" data-pct="68"></div></div>
+      <div class="chips"><span class="chip">Raycasting</span><span class="chip">OrbitControls</span><span class="chip">Mouse lerp</span></div>
+    </div>
+
+    <!-- ═══════ TOOLS ═══════ -->
+    <div class="card show" data-cat="tools">
+      <span class="badge">4 yrs</span>
+      <div class="card-top"><div class="icon">🔀</div><div class="pct" data-target="88">0%</div></div>
+      <div class="cname">Git</div><div class="ctag">Tools · Version control</div>
+      <div class="track"><div class="fill fill-blue" data-pct="88"></div></div>
+      <div class="chips"><span class="chip">Commit</span><span class="chip">Branch</span><span class="chip">Merge</span><span class="chip">Rebase</span></div>
+    </div>
+
+    <div class="card show" data-cat="tools">
+      <span class="badge">4 yrs</span>
+      <div class="card-top"><div class="icon">🐙</div><div class="pct" data-target="86">0%</div></div>
+      <div class="cname">GitHub</div><div class="ctag">Tools · Hosting</div>
+      <div class="track"><div class="fill fill-blue" data-pct="86"></div></div>
+      <div class="chips"><span class="chip">PRs</span><span class="chip">Actions CI/CD</span><span class="chip">Pages</span></div>
+    </div>
+
+    <div class="card show" data-cat="tools">
+      <span class="badge">4 yrs</span>
+      <div class="card-top"><div class="icon">💻</div><div class="pct" data-target="92">0%</div></div>
+      <div class="cname">VS Code</div><div class="ctag">Tools · Editor</div>
+      <div class="track"><div class="fill fill-blue" data-pct="92"></div></div>
+      <div class="chips"><span class="chip">Extensions</span><span class="chip">Snippets</span><span class="chip">Debug</span></div>
+    </div>
+
+    <div class="card show" data-cat="tools">
+      <span class="badge">3 yrs</span>
+      <div class="card-top"><div class="icon">📦</div><div class="pct" data-target="82">0%</div></div>
+      <div class="cname">NPM</div><div class="ctag">Tools · Package manager</div>
+      <div class="track"><div class="fill fill-blue" data-pct="82"></div></div>
+      <div class="chips"><span class="chip">Scripts</span><span class="chip">Workspaces</span><span class="chip">Publish</span></div>
+    </div>
+
+    <div class="card show" data-cat="tools">
+      <span class="badge">2 yrs</span>
+      <div class="card-top"><div class="icon">⚡</div><div class="pct" data-target="80">0%</div></div>
+      <div class="cname">Vite</div><div class="ctag">Tools · Build</div>
+      <div class="track"><div class="fill fill-blue" data-pct="80"></div></div>
+      <div class="chips"><span class="chip">HMR</span><span class="chip">Rollup</span><span class="chip">Plugins</span></div>
+    </div>
+
+    <div class="card show" data-cat="tools">
+      <span class="badge">2 yrs</span>
+      <div class="card-top"><div class="icon">🖌️</div><div class="pct" data-target="74">0%</div></div>
+      <div class="cname">Figma</div><div class="ctag">Tools · Design</div>
+      <div class="track"><div class="fill fill-blue" data-pct="74"></div></div>
+      <div class="chips"><span class="chip">Components</span><span class="chip">Prototyping</span><span class="chip">Dev mode</span></div>
+    </div>
+
+    <div class="card show" data-cat="tools">
+      <span class="badge">3 yrs</span>
+      <div class="card-top"><div class="icon">🔍</div><div class="pct" data-target="84">0%</div></div>
+      <div class="cname">Chrome DevTools</div><div class="ctag">Tools · Debug</div>
+      <div class="track"><div class="fill fill-blue" data-pct="84"></div></div>
+      <div class="chips"><span class="chip">Network</span><span class="chip">Performance</span><span class="chip">Sources</span></div>
+    </div>
+
+    <div class="card show" data-cat="tools">
+      <span class="badge">3 yrs</span>
+      <div class="card-top"><div class="icon">🐧</div><div class="pct" data-target="78">0%</div></div>
+      <div class="cname">Linux Terminal</div><div class="ctag">Tools · OS</div>
+      <div class="track"><div class="fill fill-blue" data-pct="78"></div></div>
+      <div class="chips"><span class="chip">Bash</span><span class="chip">SSH</span><span class="chip">Cron</span><span class="chip">Chmod</span></div>
+    </div>
+
+  </div>
+</div><!-- /page -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="saturn.js"></script>
+<script src="cards.js"></script>
+</body>
+</html>
