@@ -9,9 +9,9 @@
 
 ---
 
-## ✨ Live Preview
+## 🌐 Live Demo
 
-> Open `index.html` in any modern browser — no build step required.
+**[darshilking208.github.io/3d-skills-portfolio](https://darshilking208.github.io/3d-skills-portfolio/)**
 
 ---
 
@@ -31,23 +31,22 @@
 
 ## 🚀 Features
 
-- 🪐 **Animated Saturn** — procedural planet texture, multi-layer rings, 2 orbiting moons, star field, purple nebula cloud
-- 🖱️ **Mouse parallax** — Saturn reacts to cursor movement in real time
-- 🃏 **Skill cards** — scroll-reveal entrance, animated progress bars, live percentage counters, 3D tilt on hover
-- 🔖 **Filter tabs** — Frontend / Backend / 3D / Tools with staggered re-entry animation
-- 📡 **Zero build tools** — pure HTML, CSS & JS; Three.js loaded from CDN
+- 🪐 **Animated Saturn** — procedural planet texture, multi-layer rings, 2 orbiting moons, star field & purple nebula
+- 🖱️ **Mouse parallax** — Saturn orbits with your cursor in real time
+- 🃏 **32+ Skill cards** — scroll-reveal, animated progress bars, live % counters, 3D tilt on hover
+- 🔖 **Filter tabs** — Frontend · Backend · 3D / WebGL · Tools with staggered re-entry animation
+- ⚡ **Zero build tools** — pure HTML, CSS & JS; Three.js via CDN
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Skills Covered
 
-| Layer | Technology |
+| Category | Skills |
 |---|---|
-| Markup | HTML5 (semantic) |
-| Styling | CSS3 (custom properties, keyframes, grid) |
-| 3D Scene | Three.js r128 |
-| Interactions | Vanilla JavaScript (ES6+) |
-| Font | Syne + Space Mono (Google Fonts) |
+| **Frontend** | HTML5, CSS3, JavaScript, Responsive Design, Tailwind, Bootstrap, DOM, Animations |
+| **Backend** | Python, Node.js, Express.js, PHP, MySQL, REST API, Authentication |
+| **3D / WebGL** | Three.js, WebGL, GLSL Shaders, Blender, 3D Animations, Particles, Interactive 3D UI |
+| **Tools** | Git, GitHub, VS Code, NPM, Vite, Figma, Chrome DevTools, Linux Terminal |
 
 ---
 
@@ -99,7 +98,7 @@ No `npm install`. No bundler. Just open and run.
 </div>
 ```
 
-**Move Saturn** — change position in `saturn.js`:
+**Move Saturn** — edit position in `saturn.js`:
 
 ```js
 saturnGroup.position.set(2.2, -0.2, -1); // x, y, z
